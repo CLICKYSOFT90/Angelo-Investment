@@ -1,0 +1,1340 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* fonts */
+@font-face {
+    font-family: "Baskerville-Normal";
+    src: url(../fonts/Baskerville-Normal.ttf);
+}
+
+@font-face {
+    font-family: "Candara";
+    src: url(../fonts/Candara.ttf);
+}
+
+@font-face {
+    font-family: "Candara-Bold";
+    src: url(../fonts/Candara-Bold.TTF);
+}
+
+@font-face {
+    font-family: "Baskerville-Light";
+    src: url(../fonts/Baskerville-Light.ttf);
+}
+
+@font-face {
+    font-family: "Baskerville-Regular";
+    src: url(../fonts/Baskerville-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Baskerville-Bold";
+    src: url(../fonts/Baskerville-Bold.ttf);
+}
+
+/* fonts */
+
+body {
+    overflow-x: hidden !important;
+    background-color: #fff !important;
+
+}
+
+.light-style .menu .app-brand.demo {
+    height: 64px;
+}
+
+.dark-style .menu .app-brand.demo {
+    height: 64px;
+}
+
+.app-brand-logo.demo {
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+.app-brand-logo.demo svg {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.app-brand-text.demo {
+    font-size: 1.75rem;
+    letter-spacing: -0.45px;
+}
+
+/* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+    padding-top: 64px !important;
+}
+
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+    z-index: auto;
+}
+
+.demo-blocks > * {
+    display: block !important;
+}
+
+.demo-inline-spacing > * {
+    margin: 1rem 0.375rem 0 0 !important;
+}
+
+.demo-vertical-spacing > * {
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+}
+
+.demo-vertical-spacing.demo-only-element > :first-child {
+    margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * {
+    margin-top: 1.875rem !important;
+    margin-bottom: 0 !important;
+}
+
+.demo-vertical-spacing-lg.demo-only-element > :first-child {
+    margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl > * {
+    margin-top: 5rem !important;
+    margin-bottom: 0 !important;
+}
+
+.demo-vertical-spacing-xl.demo-only-element > :first-child {
+    margin-top: 0 !important;
+}
+
+.rtl-only {
+    display: none !important;
+    text-align: left !important;
+    direction: ltr !important;
+}
+
+[dir="rtl"] .rtl-only {
+    display: block !important;
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.layout-demo-placeholder img {
+    width: 900px;
+}
+
+.layout-demo-info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.main-header .navbar {
+    background-color: #fff;
+    box-shadow: 0 10px 20px 7px rgb(0 0 0 / 9%), 2px -1px 8px rgb(0 0 0 / 10%) !important;
+    padding: 40px 0px;
+}
+
+.side-nav {
+    background-color: #f2f2f2;
+}
+
+.app-brand {
+    padding: 20px 0 !important;
+    justify-content: center;
+}
+
+.light-style .menu .app-brand.demo {
+    height: unset;
+}
+
+.side-nav .vs-md {
+    display: none !important;
+}
+
+.layout-navbar {
+    padding: 40px 0px;
+}
+
+.menu-listing-main {
+    margin: 40px 0px !important;
+}
+
+.menu-item {
+    position: relative;
+    padding: 15px 0px !important;
+}
+
+.menu-link:not(.d-item) {
+    padding: 11px 40px !important;
+}
+
+.menu-item.open span {
+    transform: rotate(180deg);
+}
+
+.menu-item.open .menu-toggle:after {
+    bottom: 13px;
+    left: 39px;
+    content: "";
+    width: 65%;
+    background: #d2d8de;
+    position: absolute;
+    height: 2px;
+}
+
+.menu-item span {
+    transition: 0.6s all ease-in-out;
+    position: absolute;
+    right: 20%;
+    font-size: 18px;
+    color: #435665;
+}
+
+.menu-vertical .menu-sub .menu-link {
+    padding-left: 28px;
+}
+
+.menu-link {
+    color: #435665 !important;
+    font-family: "Baskerville-Normal";
+    font-size: 18px;
+}
+
+.d-item {
+    padding: 5px 0px 5px 50px !important;
+    color: #435665;
+    font-size: 14px;
+    font-family: "Baskerville-Normal";
+}
+
+.dropdown-user {
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    font-family: "Baskerville-Normal";
+    color: #39383a !important;
+    font-size: 16px !important;
+}
+
+.menu-sub {
+    list-style: none;
+}
+
+.menu-sub a {
+    display: block;
+}
+
+.wallet-box {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 7px rgb(0 0 0 / 9%), 2px -1px 8px rgb(0 0 0 / 10%);
+    border-radius: 15px;
+    background-image: url(../images/dollar-bg.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: -21px;
+    background-size: 65px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.wallet-content h6 {
+    font-family: "Baskerville-Normal";
+    font-size: 16px;
+    color: #726c6c;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wallet-content h5 {
+    font-family: "Baskerville-Bold";
+    color: #435665;
+    font-size: 45px;
+    text-align: center;
+}
+
+.wallet-distributions-sec {
+    padding: 70px 0px 30px;
+}
+
+.dashbard-head h1 {
+    font-size: 35px;
+    font-family: "Baskerville-Normal";
+    margin-bottom: 30px;
+    color: #435665;
+}
+
+.table-main {
+    box-shadow: 0 10px 20px 7px rgb(0 0 0 / 9%), 2px -1px 8px rgb(0 0 0 / 10%);
+    border-radius: 15px;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+}
+
+.table-main thead tr {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.table-main .table thead th {
+    font-size: 16px;
+    font-family: "Baskerville-Normal";
+    color: #435665 !important;
+    padding: 15px 50px;
+}
+
+.table-main .table tbody td {
+    padding: 15px 50px;
+}
+
+.table-main .table tbody td {
+    padding: 8px 50px;
+    font-family: "Candara";
+    font-size: 15px;
+    color: #39383a !important;
+}
+
+.table-head h4 {
+    font-size: 30px;
+    font-family: "Baskerville-Normal";
+    margin-bottom: 0px;
+    color: #435665;
+}
+
+.view-all-table {
+    display: inline-block;
+    padding: 13px 60px;
+    border: 1px solid #435665;
+    background: #435665;
+    color: #fff;
+    font-family: "Baskerville-Normal";
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.transaction-sec {
+    padding: 0px 0px 70px;
+}
+
+.recent-invested-project {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.recent-thumb {
+    flex-shrink: 0;
+}
+
+.equity-recent ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 8px 0;
+    margin: 0;
+}
+
+.equity-recent li {
+    position: relative;
+}
+
+.equity-recent li:nth-child(2)::after {
+    content: none;
+}
+
+.equity-recent li::after {
+    content: "";
+    position: absolute;
+    right: -14px;
+    top: 3px;
+    background-color: #39383a;
+    width: 2px;
+    height: 17px;
+}
+
+.equity-recent li {
+    font-size: 14px;
+    font-family: "Candara";
+    color: #39383a;
+}
+
+.recent-project-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.project-cost span {
+    font-family: "Baskerville-Normal";
+    font-size: 21px;
+    color: #435665;
+}
+
+.recent-project-head {
+    font-family: "Baskerville-Normal";
+    font-size: 21px;
+    color: #435665;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    cursor: pointer;
+}
+
+.project-name .tooltip {
+    position: absolute;
+    top: 0;
+}
+
+.project-description {
+    font-family: "Candara";
+    color: #39383a;
+    font-size: 12px;
+    margin: 0;
+}
+
+.recent-invested-card {
+    box-shadow: 0 10px 20px 7px rgb(0 0 0 / 9%), 2px -1px 8px rgb(0 0 0 / 27%);
+    border-radius: 15px;
+    padding: 30px 25px;
+    word-break: break-word;
+    overflow: hidden;
+}
+
+.recent-invested-scroll {
+    overflow-y: scroll;
+    height: 383px;
+}
+
+.recent-invested-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.recent-invested-scroll {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.recent-invested-head h4 {
+    font-size: 30px;
+    font-family: "Baskerville-Normal";
+    color: #435665;
+    margin-bottom: 30px;
+}
+
+.balance-cost h6 {
+    font-family: "Baskerville-Normal";
+    font-size: 18px;
+    color: #726c6c;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.balance-cost h6 span {
+    font-size: 33px;
+    font-family: "Baskerville-Bold";
+    color: #435665;
+}
+
+.app-brand .layout-menu-toggle i {
+    color: #435665;
+}
+
+.user-menu {
+    font-family: "Baskerville-Normal";
+}
+
+/* modal animation */
+.modal-wd-funds {
+    max-width: 1140px !important;
+}
+
+.modal-content {
+    border-radius: 15px !important;
+}
+
+.md-body {
+    padding: 60px 100px !important;
+}
+
+.add-md-cart {
+    padding: 20px 0px 0px;
+}
+
+.modal.fade.show .modal-dialog.modal-dialog-slideout {
+    -webkit-transform: translate(0, 0) !important;
+    transform: translate(0, 0) !important;
+    display: flex;
+    align-items: stretch;
+    -webkit-box-align: stretch;
+}
+
+.modal.fade .modal-dialog.modal-dialog-slideout {
+    -webkit-transform: translate(100%, 0) scale(1);
+    transform: translate(100%, 0) scale(1);
+}
+
+.modal-open {
+    padding: 0px !important;
+}
+
+/* modal annimation end */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.contact-fields input,
+.contact-fields select {
+    width: 100%;
+    outline: 0;
+    padding: 14px 20px;
+    border: 1px solid #b9c9d6;
+    font-family: "Baskerville-Normal";
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.md-head h3 {
+    font-size: 32px;
+    font-family: "Baskerville-Normal";
+    color: #435665;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-fields input::placeholder {
+    color: #b9c9d6;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 32px;
+    font-size: 20px;
+    z-index: 1;
+    color: #000000;
+    cursor: pointer;
+}
+
+.md-submit {
+    padding: 13px 80px;
+}
+
+.funds-withdraw-button {
+    padding: 20px 0px 0px;
+}
+
+.submit-form {
+    text-align: center;
+    padding: 20px 0px 0px;
+}
+
+.tabs-animated .nav-tabs li a {
+    color: #d2d8de;
+    font-family: "Baskerville-Normal";
+    font-size: 16px;
+    transition: 0.6s all ease-in-out;
+}
+
+.tabs-animated .nav-tabs li a.active {
+    color: #435665;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.tabs-animated .nav-tabs {
+    display: flex;
+    gap: 40px;
+    border-bottom: unset;
+    margin-bottom: 45px;
+}
+
+.view-table-cta {
+    display: flex;
+    width: 65px;
+    padding: 10px 0px;
+    outline: 0;
+    border: 0;
+    text-decoration: underline;
+    background: transparent;
+    justify-content: center;
+    text-underline-offset: 4px;
+    font-family: "Baskerville-Normal";
+    font-size: 15px;
+    text-decoration-thickness: 2px;
+    color: #435665;
+}
+
+.portfolio-table .table thead th {
+    padding: 15px 30px;
+}
+
+.portfolio-table .table tbody td {
+    padding: 8px 30px;
+}
+
+.ban-account-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bank-info-content h6 {
+    font-size: 15px;
+    font-family: "Baskerville-Normal";
+    color: #39383a;
+    margin-bottom: 10px;
+}
+
+.bank-info-content h4 {
+    font-size: 28px;
+    font-family: "Baskerville-Normal";
+    color: #435665;
+}
+
+
+.bank-card-main {
+    padding: 50px 90px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px 7px rgb(0 0 0 / 9%), 2px -1px 8px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+    word-break: break-word;
+}
+
+.bank-info-content {
+    margin-bottom: 40px;
+}
+
+.bank-info-content:nth-child(3) {
+    margin-bottom: 0px;
+}
+
+.delete-edit-main {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    padding: 20px 0px 0px;
+}
+
+.delete {
+    background-color: #e1e1e1;
+    padding: 13px 0px;
+    width: 200px;
+    border: 1px solid transparent;
+    color: #435665;
+}
+
+.edit {
+    padding: 13px 0px;
+    width: 200px;
+}
+
+.account-edit {
+    padding: 13px 0px;
+    width: 200px;
+}
+
+.bg-remove {
+    background-color: transparent;
+    box-shadow: unset;
+}
+
+.check-1 input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    flex-shrink: 0;
+
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid #cecece;
+    border-radius: 3px;
+}
+
+.checkbox-main {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.check-1 {
+    display: flex;
+    align-items: center;
+}
+
+.check-1 input[type="radio"]:checked {
+    background-color: #39383a;
+    border: 1px solid transparent;
+    background-image: url(../images/checkbox.gif);
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: 3px;
+}
+
+.check-with-label:checked + .ch-lab {
+    color: #39383a;
+}
+
+.update-pass {
+    color: #39383a !important;
+    font-size: 18px;
+    font-family: "Baskerville Normal";
+}
+
+.update-password {
+    padding: 15px 0px 30px;
+}
+
+.digi-text {
+    font-size: 16px;
+    font-family: "Baskerville-Normal";
+    color: #39383a;
+}
+
+.check-1 label {
+    color: #aaaaaa;
+    font-family: "Baskerville-Normal";
+    font-size: 16px;
+}
+
+.check-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.investor-offering-card {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 7px rgb(0 0 0 / 9%), 2px -1px 8px rgb(0 0 0 / 10%);
+    border-radius: 15px;
+    background-image: url(../images/persons.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: -101px;
+    background-size: 240px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.coupon {
+    background-image: url(../images/coupon.png);
+    background-position: -70px 11px;
+    background-size: 220px;
+}
+
+.dollar-bg {
+    background-image: url(../images/admin-dollar.png);
+    background-position: -31px 5px;
+    background-size: 100px;
+}
+
+.invester-content h6 {
+    font-family: "Baskerville-Normal";
+    font-size: 16px;
+    color: #726c6c;
+    padding-bottom: 30px;
+}
+
+.invester-content h5 {
+    font-size: 60px;
+    font-family: "Baskerville-Bold";
+    text-align: right;
+    color: #435665;
+}
+
+.dashbard-head p {
+    font-size: 15px;
+    color: #39383a;
+    font-family: "Candara";
+}
+
+.account-card {
+    padding: 0px 0px !important;
+}
+
+.chart-title {
+    font-family: "Baskerville-Normal";
+    font-size: 20px;
+    padding-left: 11px;
+    color: #726c6c;
+    padding-bottom: 20px;
+}
+
+.cs-card {
+    padding: 20px 0px;
+    border-radius: 15px !important;
+    box-shadow: 0 10px 20px 7px rgb(0 0 0 / 9%), 2px -1px 8px rgb(0 0 0 / 10%) !important;
+    margin-bottom: 30px;
+}
+
+.round-50 {
+    border-radius: 50%;
+}
+
+.graph-body {
+    padding: 0px 40px 0px 20px !important;
+}
+
+.pie-body {
+    padding: 30px 80px !important;
+    display: flex;
+    align-items: center;
+}
+
+.doughnut-legend {
+    padding: 0px 30px;
+}
+
+.ct-descrip1 {
+    font-family: 'Baskerville-Normal';
+    font-size: 16px;
+    color: #726C6C;
+}
+
+.top-ivestor-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.top-content h5 {
+    font-size: 20px;
+    font-family: 'Baskerville-Normal';
+    margin-bottom: 5px;
+    color: #435665;
+}
+
+.top-content p {
+    color: #39383A;
+    font-size: 12px;
+    font-family: "Candara";
+}
+
+.view-top span {
+    color: #435665;
+    font-family: "Baskerville-Normal";
+    font-size: 15px;
+    text-align: center;
+}
+
+.view-top {
+    display: flex;
+}
+
+.top-investor-thumb {
+    flex-shrink: 0;
+}
+
+.top-content {
+    width: 70%;
+    word-break: break-word;
+}
+
+.top-scroll {
+    height: 320px;
+}
+
+.approve {
+    width: 95px;
+    display: inline-block;
+    padding: 5px 0;
+    outline: 0;
+    border: 1px solid #E1E1E1;
+    background-color: #E1E1E1;
+    text-align: center;
+    font-family: 'Candara';
+    font-size: 14px;
+    color: #435665;
+    border-radius: 8px;
+}
+
+.reject {
+    width: 95px;
+    display: inline-block;
+    padding: 5px 0;
+    outline: 0;
+    border: 1px solid #435665;
+    background-color: #435665;
+    text-align: center;
+    font-family: 'Candara';
+    font-size: 14px;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.action-cta {
+    display: flex;
+    gap: 10px;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.side-nav .menu-toggle::after {
+    content: unset;
+    position: unset;
+    top: unset;
+    display: unset;
+    transform: unset;
+}
+
+.side-nav .menu-item.open:not(.menu-item-closing) > .menu-toggle::after {
+    transform: unset
+}
+
+
+.side-nav.menu-vertical .menu-item .menu-link {
+    font-size: 18px;
+}
+
+.menu-active {
+    background-color: #435665;
+    color: #ffffff !important;
+}
+
+.content-wrapper {
+    justify-content: unset;
+}
+
+/*Developer's CSS*/
+#DataTables_Table_0_wrapper .row:first-child,
+#DataTables_Table_1_wrapper .row:first-child {
+    padding: 0 49px;
+}
+
+#DataTables_Table_0_wrapper .row:last-child,
+#DataTables_Table_1_wrapper .row:last-child {
+    padding: 0 49px;
+    margin-bottom: 25px;
+}
+
+.swal2-container {
+    z-index: 999999999999 !important;
+}
+
+.bank-custom-input {
+    font-size: 28px;
+    font-family: "Baskerville-Normal";
+    color: #435665;
+    border: 0;
+}
+
+.recent-thumb img{
+    width: 128px;
+    height: 97px;
+}
+
+/* media start  */
+
+@media only screen and (min-width: 320px) and (max-width: 529px) {
+    .app-brand .layout-menu-toggle {
+        display: block !important;
+    }
+
+    .table-header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .wallet-box {
+        margin-bottom: 25px;
+    }
+
+    .table-main {
+        margin-bottom: 25px;
+    }
+
+    .recent-invested-project {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .wallet-content h5 {
+        font-size: 35px;
+    }
+
+    .table-main .table thead th {
+        font-size: 15px;
+    }
+
+    .md-body {
+        padding: 60px 30px !important;
+    }
+
+    .md-head h3 {
+        font-size: 30px;
+    }
+
+    .add-funds {
+        padding: 13px 50px;
+    }
+
+    .bank-card-main {
+        padding: 50px 30px;
+    }
+
+    .ban-account-head {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bank-info-content h4 {
+        font-size: 25px;
+    }
+
+    .tabs-animated .nav-tabs {
+        gap: 15px;
+    }
+
+    .top-content {
+        width: 55%;
+    }
+
+    .investor-offering-card {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+}
+
+@media only screen and (min-width: 425px) and (max-width: 529px) {
+}
+
+@media only screen and (min-width: 530px) and (max-width: 767px) {
+    .app-brand .layout-menu-toggle {
+        display: block !important;
+    }
+
+    .table-header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .wallet-box {
+        margin-bottom: 25px;
+    }
+
+    .table-main {
+        margin-bottom: 25px;
+    }
+
+    .recent-invested-project {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .table-main .table thead th {
+        font-size: 15px;
+    }
+
+    .ban-account-head {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .investor-offering-card {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .app-brand .layout-menu-toggle {
+        display: block !important;
+    }
+
+    .table-header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .wallet-box {
+        margin-bottom: 25px;
+    }
+
+    .table-main {
+        margin-bottom: 25px;
+    }
+
+    .recent-invested-project {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .table-main .table thead th {
+        font-size: 15px;
+    }
+
+    .md-body {
+        padding: 60px 60px !important;
+    }
+
+    .modal-wd-funds {
+        max-width: 680px !important;
+    }
+
+    .bank-card-main {
+        padding: 50px 30px;
+    }
+
+    .bank-info-content h4 {
+        font-size: 25px;
+    }
+
+    .investor-offering-card {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .app-brand .layout-menu-toggle {
+        display: block !important;
+    }
+
+    .wallet-content h6 {
+        font-size: 14px;
+    }
+
+    .wallet-content h5 {
+        font-size: 30px;
+    }
+
+    .table-main .table thead th {
+        font-size: 16px;
+    }
+
+    .recent-invested-project {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .pie-body {
+        padding: 30px 20px !important;
+    }
+
+    .top-content {
+        width: 55%;
+    }
+
+    .table-header {
+        padding: 40px 30px;
+    }
+
+    .table-head h4 {
+        font-size: 25px;
+    }
+
+    .view-all-table {
+        padding: 13px 45px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1250px) {
+    .wallet-content h5 {
+        font-size: 35px;
+    }
+
+    .wallet-box {
+        padding: 30px 0px;
+    }
+
+    .pie-body {
+        min-height: 348px;
+        padding: 30px 45px !important;
+    }
+
+    .top-content {
+        width: 55%;
+    }
+
+    .top-scroll {
+        height: 345px;
+    }
+
+    .table-head h4 {
+        font-size: 25px;
+    }
+
+    .table-header {
+        padding: 40px 30px;
+    }
+}
+
+@media only screen and (min-width: 1260px) and (max-width: 1365px) {
+    .wallet-content h6 {
+        font-size: 14px;
+    }
+
+    .wallet-content h5 {
+        font-size: 35px;
+    }
+
+    .pie-body {
+        min-height: 348px;
+        padding: 30px 45px !important;
+    }
+
+    .top-content {
+        width: 55%;
+    }
+
+    .top-scroll {
+        height: 345px;
+    }
+
+    .table-head h4 {
+        font-size: 25px;
+    }
+
+    .table-header {
+        padding: 40px 30px;
+    }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1439px) {
+    .wallet-content h6 {
+        font-size: 15px;
+    }
+
+    .wallet-content h5 {
+        font-size: 35px;
+    }
+
+    .recent-invested-scroll {
+        height: 384px;
+    }
+
+    .pie-body {
+        padding: 30px 40px !important;
+        min-height: 355px;
+    }
+
+    .top-scroll {
+        height: 344px;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1420px) {
+    .top-content {
+        width: 65%;
+    }
+
+    .recent-invested-scroll {
+        height: 344px;
+    }
+
+    .top-scroll {
+        height: 344px;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1599px) {
+    .wallet-content h5 {
+        font-size: 35px;
+    }
+
+    .pie-body {
+        padding: 30px 43px !important;
+        min-height: 350px;
+    }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1590px) {
+    .recent-project-head {
+        font-size: 18px;
+    }
+
+    .recent-invested-scroll {
+        height: 411px;
+    }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {
+}
+
+@media only screen and (min-width: 1680px) and (max-width: 1919px) {
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2200px) {
+    /* .pie-body{min-height: 650px;} */
+    .graph-body {
+        min-height: 472px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .graph-body {
+        min-height: 686px;
+    }
+
+    .top-scroll {
+        height: 320px;
+    }
+}
+
+
